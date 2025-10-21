@@ -1,10 +1,11 @@
 # Joyner Lucas E-Commerce Store 🎵🛍️
 
-Un clone premium d'e-commerce inspiré de Joyner Lucas, construit avec **Next.js 14**, **TypeScript**, **Tailwind CSS**, et **Supabase**.
+Premium streetwear for the modern generation, construit avec **Next.js 14**, **TypeScript**, **Tailwind CSS**, et **Supabase**.
 
 ## ✨ Fonctionnalités
 
 ### 🛒 E-Commerce
+
 - **Catalogue de produits** avec filtres par catégorie
 - **Pages produits détaillées** avec galerie d'images
 - **Panier d'achat persistant** (localStorage)
@@ -12,18 +13,21 @@ Un clone premium d'e-commerce inspiré de Joyner Lucas, construit avec **Next.js
 - **Gestion des commandes**
 
 ### 🔐 Authentification
+
 - **Inscription / Connexion** avec Supabase Auth
 - **Profil utilisateur**
 - **Historique des commandes**
 - **Authentification sécurisée**
 
 ### 👨‍💼 Dashboard Admin
+
 - **Gestion des produits** (CRUD complet)
 - **Statistiques** en temps réel
 - **Gestion des stocks**
 - **Produits mis en avant**
 
 ### 🎨 Design
+
 - **Interface moderne et responsive**
 - **Animations fluides** avec Framer Motion
 - **Dark theme premium**
@@ -33,6 +37,7 @@ Un clone premium d'e-commerce inspiré de Joyner Lucas, construit avec **Next.js
 ## 🚀 Installation
 
 ### 1. Cloner le projet
+
 ```bash
 cd street-urban.co
 npm install
@@ -41,17 +46,20 @@ npm install
 ### 2. Configuration Supabase
 
 #### A. Créer un projet Supabase
+
 1. Aller sur [supabase.com](https://supabase.com)
 2. Créer un nouveau projet
 3. Récupérer l'URL et la clé anonyme
 
 #### B. Créer le fichier `.env.local`
+
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=votre_url_supabase
 NEXT_PUBLIC_SUPABASE_ANON_KEY=votre_cle_anonyme_supabase
 ```
 
 #### C. Créer les tables dans Supabase
+
 Aller dans **SQL Editor** et exécuter le script `supabase-schema.sql` :
 
 ```sql
@@ -101,21 +109,23 @@ street-urban.co/
 ## 🗄️ Schéma de base de données
 
 ### Products
+
 ```typescript
 {
-  id: UUID
-  name: string
-  description: string
-  price: number
-  image_url: string
-  category: 'clothing' | 'music' | 'accessories'
-  stock: number
-  is_featured: boolean
-  created_at: timestamp
+  id: UUID;
+  name: string;
+  description: string;
+  price: number;
+  image_url: string;
+  category: "clothing" | "music" | "accessories";
+  stock: number;
+  is_featured: boolean;
+  created_at: timestamp;
 }
 ```
 
 ### Orders
+
 ```typescript
 {
   id: UUID
@@ -129,6 +139,7 @@ street-urban.co/
 ```
 
 ### Order Items
+
 ```typescript
 {
   id: UUID
@@ -183,6 +194,7 @@ npm run lint     # Linter le code
 ## 📱 Pages
 
 ### Public
+
 - `/` - Page d'accueil
 - `/shop` - Catalogue produits
 - `/shop?category=clothing` - Filtrage par catégorie
@@ -192,6 +204,7 @@ npm run lint     # Linter le code
 - `/auth/signup` - Inscription
 
 ### Protégées (authentification requise)
+
 - `/profile` - Profil utilisateur
 - `/checkout` - Checkout
 - `/admin` - Dashboard admin
@@ -210,6 +223,7 @@ Jaune: #eab308
 ## 👨‍💻 Développement
 
 ### Ajouter un produit (Admin)
+
 1. Se connecter avec un compte
 2. Aller sur `/admin`
 3. Cliquer sur "Add Product"
@@ -217,6 +231,7 @@ Jaune: #eab308
 5. Sauvegarder
 
 ### Tester le flow complet
+
 1. Créer un compte sur `/auth/signup`
 2. Parcourir `/shop`
 3. Ajouter des produits au panier

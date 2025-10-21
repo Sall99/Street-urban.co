@@ -143,12 +143,12 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-black">
             SHOP BY CATEGORY
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 name: "CLOTHING",
@@ -172,21 +172,20 @@ export default async function Home() {
               <Link
                 key={category.name}
                 href={category.href}
-                className="group relative h-64 rounded-lg overflow-hidden border border-gray-200 block"
+                className="group bg-white rounded-lg overflow-hidden hover:shadow-md transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-linear-to-t from-white via-white/50 to-transparent z-10" />
-                <div className="relative w-full h-full">
+                <div className="aspect-square relative overflow-hidden">
                   <Image
                     src={category.image}
                     alt={category.name}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                     priority
                   />
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center z-20">
-                  <h3 className="text-3xl font-bold text-black group-hover:text-gray-700 transition">
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-black">
                     {category.name}
                   </h3>
                 </div>
