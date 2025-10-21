@@ -26,7 +26,7 @@ export default async function Home() {
   return (
     <div>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]" />
 
         <div className="relative z-10 text-center max-w-6xl mx-auto px-4 py-20">
           <div className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
@@ -37,7 +37,7 @@ export default async function Home() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight text-black leading-none">
             STREET
             <br />
-            <span className="bg-gradient-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
               URBAN.CO
             </span>
           </h1>
@@ -51,17 +51,17 @@ export default async function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/shop"
-              className="group bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-gray-900 transition-all inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+              className="group bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-900 transition-all inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             >
               SHOP COLLECTION
               <ArrowRight
-                size={20}
+                size={16}
                 className="group-hover:translate-x-1 transition-transform"
               />
             </Link>
             <Link
               href="/shop?category=t-shirt"
-              className="border-2 border-black text-black px-8 py-4 rounded-full font-bold hover:bg-black hover:text-white transition-all inline-flex items-center justify-center gap-2"
+              className="border-2 border-black text-black px-6 py-3 rounded-full font-bold hover:bg-black hover:text-white transition-all inline-flex items-center justify-center gap-2"
             >
               EXPLORE STYLES
             </Link>
@@ -174,7 +174,7 @@ export default async function Home() {
                 href={category.href}
                 className="group relative h-64 rounded-lg overflow-hidden border border-gray-200 block"
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent z-10" />
+                <div className="absolute inset-0 bg-linear-to-t from-white via-white/50 to-transparent z-10" />
                 <div className="relative w-full h-full">
                   <Image
                     src={category.image}
@@ -211,7 +211,7 @@ export default async function Home() {
             />
             <button
               type="submit"
-              className="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-gray-800 transition"
+              className="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 transition"
             >
               SUBSCRIBE
             </button>

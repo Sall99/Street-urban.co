@@ -129,7 +129,7 @@ export default function AboutPage() {
         </p>
         <Link
           href="/shop"
-          className="inline-block bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition border-2 border-black"
+          className="inline-block bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition border-2 border-black"
         >
           SHOP NOW
         </Link>

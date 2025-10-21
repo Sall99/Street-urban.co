@@ -96,6 +96,34 @@ export default function Navbar() {
               >
                 ABOUT
               </Link>
+              <Link
+                href="/shipping"
+                className="block text-gray-700 hover:text-black transition py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                SHIPPING
+              </Link>
+              <Link
+                href="/returns"
+                className="block text-gray-700 hover:text-black transition py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                RETURNS
+              </Link>
+              <Link
+                href="/faq"
+                className="block text-gray-700 hover:text-black transition py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                FAQ
+              </Link>
+              <Link
+                href="/contact"
+                className="block text-gray-700 hover:text-black transition py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                CONTACT
+              </Link>
             </div>
           </div>
         </div>

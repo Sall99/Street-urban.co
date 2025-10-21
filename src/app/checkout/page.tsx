@@ -312,11 +312,11 @@ export default function CheckoutPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-white text-black py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-3 border-2 border-black"
+              className="w-full bg-white text-black py-3 rounded-full font-bold text-base hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 border-2 border-black"
             >
-              <Lock size={20} />
+              <Lock size={16} />
               {loading ? "PLACING ORDER..." : "PLACE ORDER"}
-              <ArrowRight size={20} />
+              <ArrowRight size={16} />
             </button>
 
             <p className="text-center text-gray-400 text-sm">
@@ -332,7 +332,7 @@ export default function CheckoutPage() {
             <div className="space-y-4 mb-6">
               {items.map((item) => (
                 <div key={item.product.id} className="flex gap-4">
-                  <div className="w-16 h-16 bg-zinc-800 rounded flex-shrink-0">
+                  <div className="w-16 h-16 bg-zinc-800 rounded shrink-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.product.image_url}

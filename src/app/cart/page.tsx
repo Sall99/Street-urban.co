@@ -21,9 +21,9 @@ export default function CartPage() {
           </p>
           <Link
             href="/shop"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition border-2 border-black"
+            className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition border-2 border-black"
           >
-            SHOP NOW <ArrowRight size={20} />
+            SHOP NOW <ArrowRight size={16} />
           </Link>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function CartPage() {
               key={item.product.id}
               className="bg-zinc-900 rounded-lg p-6 flex gap-6"
             >
-              <div className="relative w-32 h-32 flex-shrink-0 bg-zinc-800 rounded-lg overflow-hidden">
+              <div className="relative w-32 h-32 shrink-0 bg-zinc-800 rounded-lg overflow-hidden">
                 <Image
                   src={item.product.image_url}
                   alt={item.product.name}
@@ -142,14 +142,14 @@ export default function CartPage() {
 
             <Link
               href="/checkout"
-              className="w-full bg-white text-black py-4 px-8 rounded-full font-bold hover:bg-gray-200 transition inline-flex items-center justify-center gap-2 border-2 border-black"
+              className="w-full bg-white text-black py-3 px-6 rounded-full font-bold hover:bg-gray-200 transition inline-flex items-center justify-center gap-2 border-2 border-black"
             >
-              CHECKOUT <ArrowRight size={20} />
+              CHECKOUT <ArrowRight size={16} />
             </Link>
 
             <Link
               href="/shop"
-              className="w-full mt-4 border-2 border-white/20 text-white py-4 px-8 rounded-full font-bold hover:bg-white/10 transition inline-flex items-center justify-center"
+              className="w-full mt-4 border-2 border-white/20 text-white py-3 px-6 rounded-full font-bold hover:bg-white/10 transition inline-flex items-center justify-center"
             >
               CONTINUE SHOPPING
             </Link>

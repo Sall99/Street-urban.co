@@ -29,26 +29,26 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <Link
-                  href="/shop?category=clothing"
+                  href="/shop?category=t-shirt"
                   className="hover:text-black transition"
                 >
-                  Clothing
+                  T-shirts
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/shop?category=music"
+                  href="/shop?category=hoodie"
                   className="hover:text-black transition"
                 >
-                  Music
+                  hoodies
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/shop?category=accessories"
+                  href="/shop?category=socks"
                   className="hover:text-black transition"
                 >
-                  Accessories
+                  Socks
                 </Link>
               </li>
               <li>

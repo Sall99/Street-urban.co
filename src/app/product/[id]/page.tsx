@@ -150,9 +150,9 @@ export default function ProductPage() {
           <button
             onClick={handleAddToCart}
             disabled={product.stock === 0}
-            className="bg-white text-black py-4 px-8 rounded-full font-bold text-lg hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 border-2 border-black"
+            className="bg-white text-black py-3 px-6 rounded-full font-bold text-base hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 border-2 border-black"
           >
-            <ShoppingCart size={24} />
+            <ShoppingCart size={20} />
             {product.stock > 0 ? "ADD TO CART" : "OUT OF STOCK"}
           </button>
 
