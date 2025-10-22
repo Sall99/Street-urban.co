@@ -125,17 +125,21 @@ export default function CheckoutPage() {
   const finalTotal = total + shippingCost;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-5xl font-bold mb-12">CHECKOUT</h1>
+    <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-black">
+        CHECKOUT
+      </h1>
 
-      <div className="grid lg:grid-cols-3 gap-12">
+      <div className="grid lg:grid-cols-3 gap-8 sm:gap-12">
         <div className="lg:col-span-2">
-          <form onSubmit={handleSubmit} className="space-y-8">
-            <div className="bg-zinc-900 rounded-lg p-6">
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+          <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+            <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-black">
+                Contact Information
+              </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block mb-2 font-semibold">
+                  <label className="block mb-2 font-semibold text-black">
                     First Name *
                   </label>
                   <input
@@ -144,11 +148,11 @@ export default function CheckoutPage() {
                     value={formData.firstName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                   />
                 </div>
                 <div>
-                  <label className="block mb-2 font-semibold">
+                  <label className="block mb-2 font-semibold text-black">
                     Last Name *
                   </label>
                   <input
@@ -157,74 +161,86 @@ export default function CheckoutPage() {
                     value={formData.lastName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                   />
                 </div>
                 <div>
-                  <label className="block mb-2 font-semibold">Email *</label>
+                  <label className="block mb-2 font-semibold text-black">
+                    Email *
+                  </label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                   />
                 </div>
                 <div>
-                  <label className="block mb-2 font-semibold">Phone *</label>
+                  <label className="block mb-2 font-semibold text-black">
+                    Phone *
+                  </label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                   />
                 </div>
               </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-lg p-6">
-              <h2 className="text-2xl font-bold mb-6">Shipping Address</h2>
+            <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-black">
+                Shipping Address
+              </h2>
               <div className="space-y-4">
                 <div>
-                  <label className="block mb-2 font-semibold">Address *</label>
+                  <label className="block mb-2 font-semibold text-black">
+                    Address *
+                  </label>
                   <input
                     type="text"
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                     placeholder="123 Main St"
                   />
                 </div>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
-                    <label className="block mb-2 font-semibold">City *</label>
+                    <label className="block mb-2 font-semibold text-black">
+                      City *
+                    </label>
                     <input
                       type="text"
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                     />
                   </div>
                   <div>
-                    <label className="block mb-2 font-semibold">State *</label>
+                    <label className="block mb-2 font-semibold text-black">
+                      State *
+                    </label>
                     <input
                       type="text"
                       name="state"
                       value={formData.state}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                     />
                   </div>
                   <div>
-                    <label className="block mb-2 font-semibold">
+                    <label className="block mb-2 font-semibold text-black">
                       Zip Code *
                     </label>
                     <input
@@ -233,21 +249,21 @@ export default function CheckoutPage() {
                       value={formData.zipCode}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-zinc-800 border border-white/10 rounded-lg focus:border-white/30 outline-none transition"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:border-black outline-none transition text-black"
                     />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-zinc-900 rounded-lg p-6">
-              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+            <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2 text-black">
                 <CreditCard size={24} />
                 Payment Information
               </h2>
 
               <div className="space-y-4">
-                <div className="bg-zinc-800 rounded-lg p-4 border border-white/10">
+                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
                       <svg
@@ -263,13 +279,13 @@ export default function CheckoutPage() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-white">
+                      <p className="font-semibold text-black">
                         Secure Checkout
                       </p>
-                      <p className="text-sm text-gray-400">Powered by Stripe</p>
+                      <p className="text-sm text-gray-600">Powered by Stripe</p>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-gray-600">
                     You will be redirected to Stripe&apos;s secure payment page
                     to complete your purchase. Your payment information is
                     encrypted and secure.
@@ -277,7 +293,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="flex items-center gap-3 flex-wrap">
-                  <span className="text-sm text-gray-400">We accept:</span>
+                  <span className="text-sm text-gray-600">We accept:</span>
                   <div className="flex items-center gap-2">
                     <div className="bg-white rounded px-2 py-1">
                       <span className="text-xs font-bold text-blue-600">
@@ -302,7 +318,7 @@ export default function CheckoutPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-sm text-gray-400">
+                <div className="flex items-center gap-2 text-sm text-gray-600">
                   <Lock size={16} />
                   <span>256-bit SSL encryption • PCI DSS compliant</span>
                 </div>
@@ -312,59 +328,63 @@ export default function CheckoutPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-white text-black py-3 rounded-full font-bold text-base hover:bg-gray-200 transition disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2 border-2 border-black"
+              className="w-full bg-black text-white py-3 rounded-full font-bold text-sm sm:text-base hover:bg-gray-800 transition disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
             >
               <Lock size={16} />
               {loading ? "PLACING ORDER..." : "PLACE ORDER"}
               <ArrowRight size={16} />
             </button>
 
-            <p className="text-center text-gray-400 text-sm">
+            <p className="text-center text-gray-600 text-sm">
               By placing your order, you agree to our terms and conditions
             </p>
           </form>
         </div>
 
         <div className="lg:col-span-1">
-          <div className="bg-zinc-900 rounded-lg p-6 sticky top-24">
-            <h2 className="text-2xl font-bold mb-6">Order Summary</h2>
+          <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6 sticky top-24">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-black">
+              Order Summary
+            </h2>
 
-            <div className="space-y-4 mb-6">
+            <div className="space-y-4 mb-4 sm:mb-6">
               {items.map((item) => (
                 <div key={item.product.id} className="flex gap-4">
-                  <div className="w-16 h-16 bg-zinc-800 rounded shrink-0">
+                  <div className="w-16 h-16 bg-gray-100 rounded shrink-0">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={item.product.image_url}
                       alt={item.product.name}
-                      className="w-full h-full object-cover rounded"
+                      className="w-full h-full object-contain rounded"
                     />
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-sm">{item.product.name}</p>
-                    <p className="text-gray-400 text-sm">
+                    <p className="font-semibold text-sm text-black">
+                      {item.product.name}
+                    </p>
+                    <p className="text-gray-600 text-sm">
                       Qty: {item.quantity}
                     </p>
                   </div>
-                  <p className="font-bold">
+                  <p className="font-bold text-black">
                     ${(item.product.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
               ))}
             </div>
 
-            <div className="space-y-3 border-t border-white/10 pt-4">
-              <div className="flex justify-between text-gray-400">
+            <div className="space-y-3 border-t border-gray-200 pt-4">
+              <div className="flex justify-between text-gray-600">
                 <span>Subtotal</span>
                 <span>${total.toFixed(2)}</span>
               </div>
-              <div className="flex justify-between text-gray-400">
+              <div className="flex justify-between text-gray-600">
                 <span>Shipping</span>
                 <span>
                   {shippingCost === 0 ? "FREE" : `$${shippingCost.toFixed(2)}`}
                 </span>
               </div>
-              <div className="flex justify-between text-2xl font-bold border-t border-white/10 pt-4">
+              <div className="flex justify-between text-lg sm:text-xl font-bold border-t border-gray-200 pt-4 text-black">
                 <span>Total</span>
                 <span>${finalTotal.toFixed(2)}</span>
               </div>

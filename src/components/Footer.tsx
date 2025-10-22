@@ -3,14 +3,14 @@ import { Instagram, Twitter, Youtube, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-black/10 text-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1">
-            <h3 className="text-2xl font-bold mb-4">
+    <footer className="bg-white border-t border-gray-200 text-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4">
               <Link href="/">Street Urban</Link>
             </h3>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm leading-relaxed">
               Premium streetwear for the modern generation.
               <br />
               Express yourself with exclusive designs.
@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-black/10 mt-8 pt-8 text-center text-sm text-gray-600">
+        <div className="border-t border-gray-200 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-sm text-gray-600">
           <p>
             &copy; {new Date().getFullYear()} Joyner Lucas. All rights reserved.
           </p>

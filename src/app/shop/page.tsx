@@ -34,16 +34,16 @@ export default async function ShopPage({
   const products = await getProducts(searchParams.category);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12">
       {products.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (
-        <div className="text-center py-20">
-          <p className="text-gray-600 text-lg">
+        <div className="text-center py-12 sm:py-20">
+          <p className="text-gray-600 text-base sm:text-lg">
             No products found in this category.
           </p>
         </div>

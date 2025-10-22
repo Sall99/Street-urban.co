@@ -34,7 +34,7 @@ export default async function Home() {
             <span>New Collection Available</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tight text-black leading-none">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 tracking-tight text-black leading-none">
             STREET
             <br />
             <span className="bg-linear-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
@@ -42,7 +42,7 @@ export default async function Home() {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
             Premium streetwear for the modern generation.
             <br />
             Express yourself with exclusive designs.
@@ -67,24 +67,30 @@ export default async function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-20 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-black text-black mb-1">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-1">
                 500+
               </div>
-              <div className="text-sm text-gray-600 font-medium">Products</div>
+              <div className="text-xs sm:text-sm text-gray-600 font-medium">
+                Products
+              </div>
             </div>
             <div className="text-center border-x border-gray-200">
-              <div className="text-3xl md:text-4xl font-black text-black mb-1">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-1">
                 10K+
               </div>
-              <div className="text-sm text-gray-600 font-medium">Customers</div>
+              <div className="text-xs sm:text-sm text-gray-600 font-medium">
+                Customers
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-black text-black mb-1">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-1">
                 4.9★
               </div>
-              <div className="text-sm text-gray-600 font-medium">Rating</div>
+              <div className="text-xs sm:text-sm text-gray-600 font-medium">
+                Rating
+              </div>
             </div>
           </div>
         </div>
@@ -96,21 +102,21 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 sm:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-12">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-3 text-black">
-                <Sparkles className="text-yellow-500" size={32} />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 sm:mb-12">
+            <div className="mb-4 sm:mb-0">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 flex items-center gap-3 text-black">
+                <Sparkles className="text-yellow-500" size={24} />
                 FEATURED DROPS
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-base sm:text-lg">
                 Limited edition merchandise
               </p>
             </div>
             <Link
               href="/shop"
-              className="hidden md:flex items-center gap-2 text-black hover:text-gray-700 transition font-medium"
+              className="hidden sm:flex items-center gap-2 text-black hover:text-gray-700 transition font-medium"
             >
               View All <ArrowRight size={20} />
             </Link>
@@ -132,7 +138,7 @@ export default async function Home() {
             </div>
           )}
 
-          <div className="mt-8 text-center md:hidden">
+          <div className="mt-6 sm:mt-8 text-center sm:hidden">
             <Link
               href="/shop"
               className="inline-flex items-center gap-2 text-black hover:text-gray-700 transition font-medium"
@@ -143,12 +149,12 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 sm:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-black">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center text-black">
             SHOP BY CATEGORY
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 name: "CLOTHING",
@@ -195,10 +201,12 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 sm:py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4 text-black">STAY UPDATED</h2>
-          <p className="text-gray-600 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">
+            STAY UPDATED
+          </h2>
+          <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
             Get notified about new drops, exclusive releases, and special
             offers.
           </p>

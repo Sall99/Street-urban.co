@@ -27,7 +27,7 @@ export default function RootLayout({
         className={`${nunito.variable} font-sans bg-white text-black antialiased`}
       >
         <Navbar />
-        <main className="min-h-screen pt-[112px] lg:pt-[136px]">
+        <main className="min-h-screen pt-16 sm:pt-20 lg:pt-[136px]">
           {children}
         </main>
         <Footer />

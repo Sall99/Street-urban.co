@@ -45,22 +45,22 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Content */}
         <div className="space-y-2">
-          <h3 className="text-black font-bold text-sm md:text-base uppercase tracking-wide line-clamp-2 min-h-[2.5rem]">
+          <h3 className="text-black font-bold text-xs sm:text-sm md:text-base uppercase tracking-wide line-clamp-2 min-h-8 sm:min-h-10">
             {product.name}
           </h3>
 
           <div className="flex items-baseline gap-2">
             {product.sale_price ? (
               <>
-                <span className="text-black font-bold text-base md:text-lg">
+                <span className="text-black font-bold text-sm sm:text-base md:text-lg">
                   ${product.sale_price.toFixed(0)}
                 </span>
-                <span className="text-gray-500 text-sm line-through">
+                <span className="text-gray-500 text-xs sm:text-sm line-through">
                   ${product.price.toFixed(0)}
                 </span>
               </>
             ) : (
-              <span className="text-black font-bold text-base md:text-lg">
+              <span className="text-black font-bold text-sm sm:text-base md:text-lg">
                 ${product.price.toFixed(0)}
               </span>
             )}
