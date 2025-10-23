@@ -1,4 +1,4 @@
-# Joyner Lucas E-Commerce Store 🎵🛍️
+# STREET URBAN.CO
 
 Premium streetwear for the modern generation, construit avec **Next.js 14**, **TypeScript**, **Tailwind CSS**, et **Supabase**.
 
